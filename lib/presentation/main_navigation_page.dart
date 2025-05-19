@@ -35,6 +35,8 @@ class _MainNavigationPageState extends State<MainNavigationPage> {
             _currentIndex = index;
           });
         },
+        selectedItemColor: Theme.of(context).colorScheme.secondary,
+        unselectedItemColor: Colors.grey,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
