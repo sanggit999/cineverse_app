@@ -1,3 +1,4 @@
+import 'package:cineverse_app/presentation/language/page/language_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:cineverse_app/router/routes.dart';
@@ -18,6 +19,15 @@ final router = GoRouter(
   navigatorKey: _rootNavigatorKey,
   initialLocation: Routes.splash,
   routes: [
+
+   // 
+    GoRoute(
+      path: Routes.language,
+      builder: (context, state) {
+        return const LanguagePage();
+      },
+    ),
+
     // SplashPage
     GoRoute(
       path: Routes.splash,
