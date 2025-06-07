@@ -19,8 +19,7 @@ final router = GoRouter(
   navigatorKey: _rootNavigatorKey,
   initialLocation: Routes.splash,
   routes: [
-
-   // 
+    //
     GoRoute(
       path: Routes.language,
       builder: (context, state) {
