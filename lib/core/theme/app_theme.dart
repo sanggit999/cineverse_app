@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:cineverse_app/core/theme/input_decoration_theme.dart';
 
 class AppTheme {
   static ThemeData lightTheme = ThemeData(
@@ -10,11 +11,11 @@ class AppTheme {
       onPrimary: Colors.white,
       secondary: Color(0xFFE50914),
       onSecondary: Colors.white,
-      background: Colors.white,
       surface: Colors.white,
       error: Colors.red,
       onError: Colors.white,
     ),
+    inputDecorationTheme: lightInputDecorationTheme,
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -24,11 +25,11 @@ class AppTheme {
     colorScheme: const ColorScheme.dark(
       primary: Color(0xFF0D0D0D),
       secondary: Color(0xFFE50914),
-      background: Color(0xFF0D0D0D),
       onPrimary: Colors.white,
       onSecondary: Colors.white,
       error: Colors.red,
       onError: Colors.black,
     ),
+    inputDecorationTheme: darkInputDecorationTheme,
   );
 }

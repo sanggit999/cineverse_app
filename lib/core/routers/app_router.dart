@@ -1,27 +1,28 @@
-import 'package:cineverse_app/presentation/language/page/language_page.dart';
 import 'package:flutter/material.dart';
+//
 import 'package:go_router/go_router.dart';
-import 'package:cineverse_app/router/routes.dart';
+import 'package:cineverse_app/core/routers/app_routes.dart';
 //
 import 'package:cineverse_app/presentation/layout/layout_scaffold.dart';
 //
 import 'package:cineverse_app/presentation/splash/pages/splash_page.dart';
 import 'package:cineverse_app/presentation/auth/pages/login_page.dart';
 import 'package:cineverse_app/presentation/auth/pages/register_page.dart';
-import 'package:cineverse_app/presentation/home/page/home_page.dart';
-import 'package:cineverse_app/presentation/search/page/search_page.dart';
-import 'package:cineverse_app/presentation/favorite/page/favorties_page.dart';
-import 'package:cineverse_app/presentation/profile/page/profile_page.dart';
+import 'package:cineverse_app/presentation/home/pages/home_page.dart';
+import 'package:cineverse_app/presentation/search/pages/search_page.dart';
+import 'package:cineverse_app/presentation/favorite/pages/favorties_page.dart';
+import 'package:cineverse_app/presentation/profile/pages/profile_page.dart';
+import 'package:cineverse_app/presentation/language/pages/language_page.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'root');
 
-final router = GoRouter(
+final GoRouter appRouter = GoRouter(
   navigatorKey: _rootNavigatorKey,
-  initialLocation: Routes.splash,
+  initialLocation: AppRoutes.splash,
   routes: [
-    //
+    // LanguagePage
     GoRoute(
-      path: Routes.language,
+      path: AppRoutes.language,
       builder: (context, state) {
         return const LanguagePage();
       },
@@ -29,21 +30,21 @@ final router = GoRouter(
 
     // SplashPage
     GoRoute(
-      path: Routes.splash,
+      path: AppRoutes.splash,
       builder: (context, state) {
         return const SplashPage();
       },
     ),
     // LoginPage
     GoRoute(
-      path: Routes.login,
+      path: AppRoutes.login,
       builder: (context, state) {
         return const LoginPage();
       },
     ),
     // RegisterPage
     GoRoute(
-      path: Routes.register,
+      path: AppRoutes.register,
       builder: (context, state) {
         return const RegisterPage();
       },
@@ -57,7 +58,7 @@ final router = GoRouter(
         StatefulShellBranch(
           routes: [
             GoRoute(
-              path: Routes.home,
+              path: AppRoutes.home,
               builder: (context, state) => const HomePage(),
             ),
           ],
@@ -66,7 +67,7 @@ final router = GoRouter(
         StatefulShellBranch(
           routes: [
             GoRoute(
-              path: Routes.search,
+              path: AppRoutes.search,
               builder: (context, state) => const SearchPage(),
             ),
           ],
@@ -74,7 +75,7 @@ final router = GoRouter(
         StatefulShellBranch(
           routes: [
             GoRoute(
-              path: Routes.favorites,
+              path: AppRoutes.favorites,
               builder: (context, state) => const FavoritesPage(),
             ),
           ],
@@ -82,7 +83,7 @@ final router = GoRouter(
         StatefulShellBranch(
           routes: [
             GoRoute(
-              path: Routes.profile,
+              path: AppRoutes.profile,
               builder: (context, state) => const ProfilePage(),
             ),
           ],

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 //
-import 'package:cineverse_app/router/router.dart';
+import 'package:cineverse_app/core/routers/app_router.dart';
 import 'package:cineverse_app/l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 //
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
           darkTheme: AppTheme.darkTheme,
           themeMode: ThemeMode.system,
           debugShowCheckedModeBanner: false,
-          routerConfig: router,
+          routerConfig: appRouter,
         );
       },
     );

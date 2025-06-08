@@ -1,8 +1,11 @@
-import 'package:cineverse_app/l10n/app_localizations.dart';
-import 'package:cineverse_app/presentation/language/bloc/language_cubit.dart';
 import 'package:flutter/material.dart';
+//
 import 'package:flutter_bloc/flutter_bloc.dart';
+//
 import 'package:google_fonts/google_fonts.dart';
+//
+import 'package:cineverse_app/core/extensions/localization_extension.dart';
+import 'package:cineverse_app/presentation/language/bloc/language_cubit.dart';
 
 class LanguagePage extends StatelessWidget {
   const LanguagePage({super.key});
@@ -11,16 +14,14 @@ class LanguagePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final currentLocale = context.watch<LanguageCubit>().state;
 
-    final localizations = AppLocalizations.of(context)!;
-
     final languagues = [
       {
         'locale': const Locale('en'),
-        'name': '🇺🇸     ${localizations.english}',
+        'name': '🇺🇸     ${context.l10n.english}',
       },
       {
         'locale': const Locale('vi'),
-        'name': '🇻🇳     ${localizations.vietnamese}',
+        'name': '🇻🇳     ${context.l10n.vietnamese}',
       },
     ];
 
@@ -28,7 +29,7 @@ class LanguagePage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          localizations.title,
+          context.l10n.title,
           style: GoogleFonts.roboto(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.transparent,
