@@ -6,7 +6,7 @@ import 'package:cineverse_app/core/routers/app_routes.dart';
 //
 import 'package:google_fonts/google_fonts.dart';
 //
-import 'package:cineverse_app/core/extensions/localization_extension.dart';
+import 'package:cineverse_app/core/extensions/l10n_extension.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});

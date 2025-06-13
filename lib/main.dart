@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 //
 import 'package:cineverse_app/core/routers/app_router.dart';
-import 'package:cineverse_app/l10n/app_localizations.dart';
+import 'package:cineverse_app/l10n/l10n.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 //
 import 'package:cineverse_app/core/theme/app_theme.dart';
@@ -31,9 +31,9 @@ class MyApp extends StatelessWidget {
         return MaterialApp.router(
           title: 'CineVerse',
           locale: state,
-          supportedLocales: AppLocalizations.supportedLocales,
+          supportedLocales: L10n.supportedLocales,
           localizationsDelegates: [
-            AppLocalizations.delegate,
+            L10n.delegate,
             GlobalMaterialLocalizations.delegate,
             GlobalCupertinoLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,

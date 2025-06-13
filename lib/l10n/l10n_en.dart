@@ -1,18 +1,36 @@
 // ignore: unused_import
 import 'package:intl/intl.dart' as intl;
-import 'app_localizations.dart';
+import 'l10n.dart';
 
 // ignore_for_file: type=lint
 
 /// The translations for English (`en`).
-class AppLocalizationsEn extends AppLocalizations {
-  AppLocalizationsEn([String locale = 'en']) : super(locale);
+class L10nEn extends L10n {
+  L10nEn([String locale = 'en']) : super(locale);
 
   @override
   String get login => 'Login';
 
   @override
   String get register => 'Register';
+
+  @override
+  String get account => 'Account';
+
+  @override
+  String get password => 'Password';
+
+  @override
+  String get enter_email_or_username => 'Enter email or username';
+
+  @override
+  String get enter_password => 'Enter password';
+
+  @override
+  String get no_password_yet => 'No password yet';
+
+  @override
+  String get no_account_register => 'Don\'t have an account?';
 
   @override
   String get home => 'Home';

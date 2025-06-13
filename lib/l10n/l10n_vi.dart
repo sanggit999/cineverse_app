@@ -1,18 +1,36 @@
 // ignore: unused_import
 import 'package:intl/intl.dart' as intl;
-import 'app_localizations.dart';
+import 'l10n.dart';
 
 // ignore_for_file: type=lint
 
 /// The translations for Vietnamese (`vi`).
-class AppLocalizationsVi extends AppLocalizations {
-  AppLocalizationsVi([String locale = 'vi']) : super(locale);
+class L10nVi extends L10n {
+  L10nVi([String locale = 'vi']) : super(locale);
 
   @override
   String get login => 'Đăng nhập';
 
   @override
   String get register => 'Đăng ký';
+
+  @override
+  String get account => 'Tài khoản';
+
+  @override
+  String get password => 'Mật khẩu';
+
+  @override
+  String get enter_email_or_username => 'Nhập email hoặc tên đăng nhập';
+
+  @override
+  String get enter_password => 'Nhập mật khẩu';
+
+  @override
+  String get no_password_yet => 'Chưa có mật khẩu';
+
+  @override
+  String get no_account_register => 'Chưa có tài khoản?';
 
   @override
   String get home => 'Trang chủ';
@@ -24,7 +42,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get favorite => 'Yêu thích';
 
   @override
-  String get profile => 'Cá nhân';
+  String get profile => 'Hồ sơ';
 
   @override
   String get title => 'Ngôn ngữ';

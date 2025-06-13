@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 //
 import 'package:google_fonts/google_fonts.dart';
 //
-import 'package:cineverse_app/core/extensions/localization_extension.dart';
+import 'package:cineverse_app/core/extensions/l10n_extension.dart';
 import 'package:cineverse_app/presentation/language/bloc/language_cubit.dart';
 
 class LanguagePage extends StatelessWidget {

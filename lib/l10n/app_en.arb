@@ -1,4 +1,5 @@
 {
+  "@@locale": "en",
   "login": "Login",
   "register": "Register",
   "account": "Account",
@@ -6,12 +7,12 @@
   "enter_email_or_username": "Enter email or username",
   "enter_password": "Enter password",
   "no_password_yet": "No password yet",
-  "no_account_register": "Don't have an account?"
+  "no_account_register": "Don't have an account?",
   "home": "Home",
   "search": "Search",
   "favorite": "Favorite",
   "profile": "Profile",
   "title": "Language",
   "english": "English",
-  "vietnamese": "Vietnamese",
+  "vietnamese": "Vietnamese"
 }

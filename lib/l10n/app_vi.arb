@@ -1,4 +1,5 @@
 {
+  "@@locale": "vi",
   "login": "Đăng nhập",
   "register": "Đăng ký",
   "account": "Tài khoản",
@@ -6,12 +7,12 @@
   "enter_email_or_username": "Nhập email hoặc tên đăng nhập",
   "enter_password": "Nhập mật khẩu",
   "no_password_yet": "Chưa có mật khẩu",
-  "no_account_register": "Chưa có tài khoản?"
+  "no_account_register": "Chưa có tài khoản?",
   "home": "Trang chủ",
   "search": "Tìm kiếm",
   "favorite": "Yêu thích",
   "profile": "Hồ sơ",
   "title": "Ngôn ngữ",
   "english": "Tiếng Anh",
-  "vietnamese": "Tiếng Việt",
+  "vietnamese": "Tiếng Việt"
 }
