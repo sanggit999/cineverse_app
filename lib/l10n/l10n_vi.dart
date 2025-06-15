@@ -27,10 +27,10 @@ class L10nVi extends L10n {
   String get enter_password => 'Nhập mật khẩu';
 
   @override
-  String get no_password_yet => 'Chưa có mật khẩu';
+  String get dont_have_an_account => 'Chưa có tài khoản?';
 
   @override
-  String get no_account_register => 'Chưa có tài khoản?';
+  String get already_have_account => 'Đã có tài khoản?';
 
   @override
   String get home => 'Trang chủ';

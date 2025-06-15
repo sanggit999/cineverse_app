@@ -1,3 +1,4 @@
+import 'package:cineverse_app/core/theme/elevated_button_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:cineverse_app/core/theme/input_decoration_theme.dart';
 
@@ -16,6 +17,7 @@ class AppTheme {
       onError: Colors.white,
     ),
     inputDecorationTheme: lightInputDecorationTheme,
+    elevatedButtonTheme: elevatedButtonTheme,
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -31,5 +33,6 @@ class AppTheme {
       onError: Colors.black,
     ),
     inputDecorationTheme: darkInputDecorationTheme,
+    elevatedButtonTheme: elevatedButtonTheme,
   );
 }

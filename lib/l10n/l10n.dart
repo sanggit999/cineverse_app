@@ -133,17 +133,17 @@ abstract class L10n {
   /// **'Enter password'**
   String get enter_password;
 
-  /// No description provided for @no_password_yet.
-  ///
-  /// In en, this message translates to:
-  /// **'No password yet'**
-  String get no_password_yet;
-
-  /// No description provided for @no_account_register.
+  /// No description provided for @dont_have_an_account.
   ///
   /// In en, this message translates to:
   /// **'Don\'t have an account?'**
-  String get no_account_register;
+  String get dont_have_an_account;
+
+  /// No description provided for @already_have_account.
+  ///
+  /// In en, this message translates to:
+  /// **'Already have an account?'**
+  String get already_have_account;
 
   /// No description provided for @home.
   ///

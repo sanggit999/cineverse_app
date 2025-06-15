@@ -27,10 +27,10 @@ class L10nEn extends L10n {
   String get enter_password => 'Enter password';
 
   @override
-  String get no_password_yet => 'No password yet';
+  String get dont_have_an_account => 'Don\'t have an account?';
 
   @override
-  String get no_account_register => 'Don\'t have an account?';
+  String get already_have_account => 'Already have an account?';
 
   @override
   String get home => 'Home';

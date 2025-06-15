@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 final InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
   filled: true,
-  fillColor: Colors.grey.shade200,
+  fillColor: Colors.grey.shade50,
   hintStyle: GoogleFonts.roboto(
     color: Colors.black,
     fontWeight: FontWeight.w400,
@@ -11,11 +11,11 @@ final InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
   contentPadding: const EdgeInsets.all(12),
   enabledBorder: OutlineInputBorder(
     borderRadius: BorderRadius.circular(4),
-    borderSide: const BorderSide(color: Colors.black45, width: 1),
+    borderSide: const BorderSide(color: Colors.black, width: 1),
   ),
   focusedBorder: OutlineInputBorder(
     borderRadius: BorderRadius.circular(4),
-    borderSide: const BorderSide(color: Colors.black87, width: 1),
+    borderSide: const BorderSide(color: Colors.black, width: 1),
   ),
   errorBorder: OutlineInputBorder(
     borderRadius: BorderRadius.circular(4),
@@ -37,7 +37,7 @@ final InputDecorationTheme darkInputDecorationTheme = InputDecorationTheme(
   contentPadding: const EdgeInsets.all(12),
   enabledBorder: OutlineInputBorder(
     borderRadius: BorderRadius.circular(4),
-    borderSide: const BorderSide(color: Colors.white70, width: 1),
+    borderSide: const BorderSide(color: Colors.white, width: 1),
   ),
   focusedBorder: OutlineInputBorder(
     borderRadius: BorderRadius.circular(4),
