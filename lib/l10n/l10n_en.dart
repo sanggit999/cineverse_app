@@ -21,7 +21,7 @@ class L10nEn extends L10n {
   String get password => 'Password';
 
   @override
-  String get enter_email_or_username => 'Enter email or username';
+  String get enter_email => 'Enter email';
 
   @override
   String get enter_password => 'Enter password';
@@ -45,7 +45,7 @@ class L10nEn extends L10n {
   String get profile => 'Profile';
 
   @override
-  String get title => 'Language';
+  String get language => 'Language';
 
   @override
   String get english => 'English';

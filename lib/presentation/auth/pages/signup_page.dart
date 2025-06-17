@@ -1,18 +1,19 @@
-import 'package:cineverse_app/common/widgets/text_rich/base_text_rich.dart';
 import 'package:flutter/material.dart';
 //
 import 'package:go_router/go_router.dart';
 import 'package:cineverse_app/core/routers/app_routes.dart';
+import 'package:cineverse_app/core/extensions/l10n_extension.dart';
 //
 import 'package:google_fonts/google_fonts.dart';
 //
-import 'package:cineverse_app/core/extensions/l10n_extension.dart';
-//
 import 'package:cineverse_app/common/widgets/elevated_button/base_button.dart';
 import 'package:cineverse_app/common/widgets/text_form_field/base_text_form_field.dart';
+//
+import 'package:cineverse_app/common/widgets/appbar/base_app_bar.dart';
+import 'package:cineverse_app/common/widgets/text_rich/base_text_rich.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+class SignupPage extends StatelessWidget {
+  const SignupPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +21,7 @@ class LoginPage extends StatelessWidget {
     final passwordController = TextEditingController();
 
     return Scaffold(
+      appBar: BaseAppBar(),
       body: Padding(
         padding: const EdgeInsets.all(24.0),
         child: Column(
@@ -30,8 +32,8 @@ class LoginPage extends StatelessWidget {
             const SizedBox(height: 16.0),
             _emailOrUsernameField(context, emailController),
             _passwordField(context, passwordController),
-            _loginButton(context),
-            _dontHaveAnAccountText(context),
+            _registerButton(context),
+            _alreadyHaveAccountText(context),
           ],
         ),
       ),
@@ -40,7 +42,7 @@ class LoginPage extends StatelessWidget {
 
   Widget _titleLogin(BuildContext context) {
     return Text(
-      context.l10n.login,
+      context.l10n.register,
       style: GoogleFonts.roboto(fontSize: 32, fontWeight: FontWeight.bold),
     );
   }
@@ -51,7 +53,7 @@ class LoginPage extends StatelessWidget {
   ) {
     return BaseTextFormField(
       controller: controller,
-      hintText: context.l10n.enter_email_or_username,
+      hintText: context.l10n.enter_email,
       keyboardType: TextInputType.text,
       obscureText: false,
     );
@@ -69,18 +71,18 @@ class LoginPage extends StatelessWidget {
     );
   }
 
-  Widget _loginButton(BuildContext context) {
+  Widget _registerButton(BuildContext context) {
     return BaseButton(
-      title: context.l10n.login,
-      onPressed: () => {context.go(AppRoutes.language)},
+      title: context.l10n.register,
+      onPressed: () => {context.push(AppRoutes.language)},
     );
   }
 
-  Widget _dontHaveAnAccountText(BuildContext context) {
+  Widget _alreadyHaveAccountText(BuildContext context) {
     return BaseTextRich(
-      text1: context.l10n.dont_have_an_account,
-      text2: context.l10n.register,
-      onTap: () => context.go(AppRoutes.register),
+      text1: context.l10n.already_have_account,
+      text2: context.l10n.login,
+      onTap: () => context.go(AppRoutes.signin),
     );
   }
 }

@@ -6,8 +6,8 @@ import 'package:cineverse_app/core/routers/app_routes.dart';
 import 'package:cineverse_app/presentation/layout/layout_scaffold.dart';
 //
 import 'package:cineverse_app/presentation/splash/pages/splash_page.dart';
-import 'package:cineverse_app/presentation/auth/pages/login_page.dart';
-import 'package:cineverse_app/presentation/auth/pages/register_page.dart';
+import 'package:cineverse_app/presentation/auth/pages/signin_page.dart';
+import 'package:cineverse_app/presentation/auth/pages/signup_page.dart';
 import 'package:cineverse_app/presentation/home/pages/home_page.dart';
 import 'package:cineverse_app/presentation/search/pages/search_page.dart';
 import 'package:cineverse_app/presentation/favorite/pages/favorties_page.dart';
@@ -37,16 +37,16 @@ final GoRouter appRouter = GoRouter(
     ),
     // LoginPage
     GoRoute(
-      path: AppRoutes.login,
+      path: AppRoutes.signin,
       builder: (context, state) {
-        return const LoginPage();
+        return const SigninPage();
       },
     ),
     // RegisterPage
     GoRoute(
-      path: AppRoutes.register,
+      path: AppRoutes.signup,
       builder: (context, state) {
-        return const RegisterPage();
+        return const SignupPage();
       },
     ),
     // Bottom Navigation Shell

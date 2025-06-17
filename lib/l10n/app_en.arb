@@ -4,7 +4,7 @@
   "register": "Register",
   "account": "Account",
   "password": "Password",
-  "enter_email_or_username": "Enter email or username",
+  "enter_email": "Enter email",
   "enter_password": "Enter password",
   "dont_have_an_account": "Don't have an account?",
   "already_have_account": "Already have an account?",
@@ -12,7 +12,7 @@
   "search": "Search",
   "favorite": "Favorite",
   "profile": "Profile",
-  "title": "Language",
+  "language": "Language",
   "english": "English",
   "vietnamese": "Vietnamese"
 }

@@ -1,3 +1,4 @@
+import 'package:cineverse_app/common/widgets/appbar/base_app_bar.dart';
 import 'package:flutter/material.dart';
 //
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -12,7 +13,7 @@ class LanguagePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final currentLocale = context.watch<LanguageCubit>().state;
+    final currentLocale = context.read<LanguageCubit>().state;
 
     final languagues = [
       {
@@ -26,14 +27,7 @@ class LanguagePage extends StatelessWidget {
     ];
 
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          context.l10n.title,
-          style: GoogleFonts.roboto(fontSize: 24, fontWeight: FontWeight.bold),
-        ),
-        backgroundColor: Colors.transparent,
-      ),
+      appBar: BaseAppBar(),
       body: ListView.builder(
         itemCount: languagues.length,
         itemBuilder: (_, index) {

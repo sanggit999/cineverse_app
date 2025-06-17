@@ -1,15 +1,22 @@
 import 'package:flutter/material.dart';
+//
 import 'package:flutter_bloc/flutter_bloc.dart';
 //
 import 'package:cineverse_app/core/routers/app_router.dart';
+import 'package:cineverse_app/core/theme/app_theme.dart';
+//
 import 'package:cineverse_app/l10n/l10n.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 //
-import 'package:cineverse_app/core/theme/app_theme.dart';
+import 'package:cineverse_app/firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
+//
 import 'package:cineverse_app/presentation/splash/bloc/splash_cubit.dart';
 import 'package:cineverse_app/presentation/language/bloc/language_cubit.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(
     MultiBlocProvider(
       providers: [

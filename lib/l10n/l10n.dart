@@ -121,11 +121,11 @@ abstract class L10n {
   /// **'Password'**
   String get password;
 
-  /// No description provided for @enter_email_or_username.
+  /// No description provided for @enter_email.
   ///
   /// In en, this message translates to:
-  /// **'Enter email or username'**
-  String get enter_email_or_username;
+  /// **'Enter email'**
+  String get enter_email;
 
   /// No description provided for @enter_password.
   ///
@@ -169,11 +169,11 @@ abstract class L10n {
   /// **'Profile'**
   String get profile;
 
-  /// No description provided for @title.
+  /// No description provided for @language.
   ///
   /// In en, this message translates to:
   /// **'Language'**
-  String get title;
+  String get language;
 
   /// No description provided for @english.
   ///

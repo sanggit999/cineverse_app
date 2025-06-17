@@ -21,7 +21,7 @@ class L10nVi extends L10n {
   String get password => 'Mật khẩu';
 
   @override
-  String get enter_email_or_username => 'Nhập email hoặc tên đăng nhập';
+  String get enter_email => 'Nhập email';
 
   @override
   String get enter_password => 'Nhập mật khẩu';
@@ -45,7 +45,7 @@ class L10nVi extends L10n {
   String get profile => 'Hồ sơ';
 
   @override
-  String get title => 'Ngôn ngữ';
+  String get language => 'Ngôn ngữ';
 
   @override
   String get english => 'Tiếng Anh';
