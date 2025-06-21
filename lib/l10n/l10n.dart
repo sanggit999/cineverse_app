@@ -133,6 +133,48 @@ abstract class L10n {
   /// **'Enter password'**
   String get enter_password;
 
+  /// No description provided for @email_required.
+  ///
+  /// In en, this message translates to:
+  /// **'Email is required'**
+  String get email_required;
+
+  /// No description provided for @invalid_email.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid email format'**
+  String get invalid_email;
+
+  /// No description provided for @password_required.
+  ///
+  /// In en, this message translates to:
+  /// **'Password is required'**
+  String get password_required;
+
+  /// No description provided for @password_too_short.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must be at least 8 characters'**
+  String get password_too_short;
+
+  /// No description provided for @password_invalid_format.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must contain both letters and numbers'**
+  String get password_invalid_format;
+
+  /// No description provided for @password_no_spaces.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must not contain spaces'**
+  String get password_no_spaces;
+
+  /// No description provided for @password_no_diacritics.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must not contain accented characters'**
+  String get password_no_diacritics;
+
   /// No description provided for @dont_have_an_account.
   ///
   /// In en, this message translates to:

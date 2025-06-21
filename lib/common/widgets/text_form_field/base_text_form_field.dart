@@ -7,7 +7,7 @@ class BaseTextFormField extends StatefulWidget {
   final String? hintText;
   final TextInputType? keyboardType;
   final bool obscureText;
-
+  final String? Function(String?)? validator;
   const BaseTextFormField({
     super.key,
     required this.controller,
@@ -16,6 +16,7 @@ class BaseTextFormField extends StatefulWidget {
     required this.obscureText,
     this.keyboardType,
     this.fillColor,
+    this.validator,
   });
 
   @override
@@ -29,6 +30,13 @@ class _BaseTextFormFieldState extends State<BaseTextFormField> {
   void initState() {
     super.initState();
     _isObscured = widget.obscureText;
+  }
+
+  @override
+  void dispose() {
+    widget.controller.dispose();
+    _isObscured = false;
+    super.dispose();
   }
 
   @override
@@ -58,6 +66,8 @@ class _BaseTextFormFieldState extends State<BaseTextFormField> {
       ),
       keyboardType: widget.keyboardType,
       obscureText: _isObscured,
+      validator: widget.validator,
+      autovalidateMode: AutovalidateMode.onUserInteraction,
     );
   }
 }

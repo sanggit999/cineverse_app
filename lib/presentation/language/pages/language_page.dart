@@ -27,7 +27,7 @@ class LanguagePage extends StatelessWidget {
     ];
 
     return Scaffold(
-      appBar: BaseAppBar(),
+      appBar: BaseAppBar(hideLeading: false),
       body: ListView.builder(
         itemCount: languagues.length,
         itemBuilder: (_, index) {

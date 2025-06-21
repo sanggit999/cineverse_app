@@ -27,6 +27,29 @@ class L10nEn extends L10n {
   String get enter_password => 'Enter password';
 
   @override
+  String get email_required => 'Email is required';
+
+  @override
+  String get invalid_email => 'Invalid email format';
+
+  @override
+  String get password_required => 'Password is required';
+
+  @override
+  String get password_too_short => 'Password must be at least 8 characters';
+
+  @override
+  String get password_invalid_format =>
+      'Password must contain both letters and numbers';
+
+  @override
+  String get password_no_spaces => 'Password must not contain spaces';
+
+  @override
+  String get password_no_diacritics =>
+      'Password must not contain accented characters';
+
+  @override
   String get dont_have_an_account => 'Don\'t have an account?';
 
   @override

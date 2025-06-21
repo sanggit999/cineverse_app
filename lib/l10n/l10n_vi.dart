@@ -27,6 +27,27 @@ class L10nVi extends L10n {
   String get enter_password => 'Nhập mật khẩu';
 
   @override
+  String get email_required => 'Email không được để trống';
+
+  @override
+  String get invalid_email => 'Email không hợp lệ';
+
+  @override
+  String get password_required => 'Mật khẩu không được để trống';
+
+  @override
+  String get password_too_short => 'Mật khẩu phải từ 8 ký tự';
+
+  @override
+  String get password_invalid_format => 'Mật khẩu phải gồm cả chữ và số';
+
+  @override
+  String get password_no_spaces => 'Mật khẩu không được chứa khoảng trắng';
+
+  @override
+  String get password_no_diacritics => 'Mật khẩu không được chứa ký tự có dấu';
+
+  @override
   String get dont_have_an_account => 'Chưa có tài khoản?';
 
   @override
